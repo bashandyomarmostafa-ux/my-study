@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#2563eb">
+<meta name="description" content="MyStudy - خطط لمذاكرتك بطريقتك">
+<link rel="manifest" href="manifest.webmanifest">
+<title>MyStudy | خطط لمذاكرتك</title>
+<style>
+:root{--blue:#2563eb;--blue2:#1d4ed8;--bg:#f4f7fb;--card:#fff;--ink:#172033;--muted:#68758a;--line:#e4eaf2;--green:#15803d;--red:#dc2626;--amber:#b45309;--shadow:0 10px 28px rgba(25,45,80,.07)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Tahoma,Arial,sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}.app{max-width:900px;margin:auto;padding:18px 14px 42px}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:4px 0 18px}.brand{display:flex;align-items:center;gap:11px}.logo{width:46px;height:46px;border-radius:15px;background:linear-gradient(135deg,#2563eb,#60a5fa);display:grid;place-items:center;color:white;font-size:24px;box-shadow:0 8px 18px #2563eb33}.brand h1{font-size:23px;margin:0}.brand p{margin:2px 0 0;color:var(--muted);font-size:12px}.pill{background:#eaf2ff;color:#1d4ed8;border-radius:99px;padding:7px 11px;font-size:12px;font-weight:700}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:17px;box-shadow:var(--shadow);margin-bottom:14px}.stat strong{display:block;font-size:28px;line-height:1.2}.stat span{font-size:12px;color:var(--muted)}.progress{height:9px;background:#e8edf5;border-radius:99px;overflow:hidden;margin-top:13px}.progress>div{height:100%;background:linear-gradient(90deg,#16a34a,#4ade80);width:0;transition:width .2s}.section-title{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:4px 0 13px}.section-title h2{font-size:18px;margin:0}.muted{color:var(--muted);font-size:13px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:11px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}label{font-size:13px;font-weight:700;color:#344054}input,select,textarea{width:100%;border:1px solid #d7dfeb;border-radius:11px;padding:11px 12px;background:#fff;color:var(--ink);outline:none}input:focus,select:focus,textarea:focus{border-color:#6b9cff;box-shadow:0 0 0 3px #2563eb18}textarea{resize:vertical;min-height:84px}.btn{border:0;border-radius:11px;padding:11px 15px;background:var(--blue);color:#fff;font-weight:700}.btn:hover{background:var(--blue2)}.btn.secondary{background:#edf3ff;color:#1d4ed8}.btn.ghost{background:transparent;color:var(--muted);border:1px solid var(--line)}.btn.danger{background:#fff0f0;color:var(--red)}.btn.small{padding:7px 10px;font-size:12px}.actions{display:flex;gap:8px;flex-wrap:wrap}.tabs{display:flex;gap:7px;flex-wrap:wrap}.tab{border:1px solid var(--line);background:#fff;color:var(--muted);padding:8px 13px;border-radius:99px;font-size:13px}.tab.active{background:#eaf2ff;color:#1d4ed8;border-color:#cfe0ff;font-weight:700}.task-list{display:grid;gap:9px}.task{border:1px solid var(--line);border-radius:14px;padding:13px;background:#fff;display:grid;grid-template-columns:auto 1fr auto;gap:11px;align-items:center}.task input[type=checkbox]{width:19px;height:19px;accent-color:var(--green)}.task h3{font-size:14px;margin:0 0 4px}.task.done h3{text-decoration:line-through;color:#8792a4}.task-meta{font-size:12px;color:var(--muted);display:flex;gap:9px;flex-wrap:wrap}.status{font-size:11px;border-radius:99px;padding:5px 8px;background:#fff5df;color:var(--amber);white-space:nowrap}.status.done{background:#e8f7ed;color:var(--green)}.empty{text-align:center;color:var(--muted);padding:28px 10px}.subject-chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.chip{font-size:12px;padding:6px 9px;border-radius:99px;background:#f0f4fa;color:#536176}.support-box{display:grid;gap:12px}.chat{background:#f6f8fc;border:1px solid var(--line);border-radius:13px;padding:12px;max-height:260px;overflow:auto;display:grid;gap:8px}.bubble{background:#fff;border:1px solid var(--line);border-radius:12px;padding:9px 11px;font-size:13px;max-width:90%;justify-self:start}.bubble.me{background:#eaf2ff;border-color:#d6e5ff;justify-self:end}.notice{background:#fff8e8;border:1px solid #f5dfaa;color:#805414;padding:11px 12px;border-radius:12px;font-size:12px;line-height:1.6}.modal-backdrop{position:fixed;inset:0;background:#10182888;display:none;align-items:center;justify-content:center;padding:18px;z-index:5}.modal{background:white;border-radius:18px;padding:20px;max-width:430px;width:100%;box-shadow:0 20px 60px #0003}.modal h3{margin-top:0}.hidden{display:none!important}.footer{text-align:center;color:#98a2b3;font-size:11px;padding:15px}.subject-row{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:9px 0;border-bottom:1px solid var(--line)}@media(max-width:560px){.app{padding:13px 11px 30px}.card{padding:14px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.task{grid-template-columns:auto 1fr}.task .task-actions{grid-column:2;justify-content:flex-start}.top{align-items:flex-start}.pill{font-size:10px}.stat strong{font-size:24px}}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="top">
+  <div class="brand"><div class="logo">✓</div><div><h1>MyStudy</h1><p>خطط لمذاكرتك بطريقتك</p></div></div>
+  <span class="pill">نسختك الشخصية</span>
+</header>
+
+<section class="grid" aria-label="ملخص المهام">
+  <div class="card stat"><strong id="totalCount">0</strong><span>كل المهام</span></div>
+  <div class="card stat"><strong id="doneCount">0</strong><span>مكتملة</span></div>
+  <div class="card stat"><strong id="leftCount">0</strong><span>متبقية</span></div>
+</section>
+<section class="card">
+  <div class="section-title"><h2>تقدمك</h2><b id="progressText">0%</b></div>
+  <div class="progress"><div id="progressBar"></div></div>
+  <div class="subject-chips" id="subjectSummary"></div>
+</section>
+
+<section class="card">
+  <div class="section-title"><h2>إضافة مهمة جديدة</h2><span class="muted">ابدأ بخطوة صغيرة</span></div>
+  <form id="taskForm" class="form-grid">
+    <div class="field"><label for="subject">المادة</label><input id="subject" list="subjectOptions" placeholder="مثلاً: رياضيات" required><datalist id="subjectOptions"></datalist></div>
+    <div class="field"><label for="taskDate">موعد المهمة</label><input id="taskDate" type="date" required></div>
+    <div class="field full"><label for="taskName">اسم المهمة</label><input id="taskName" maxlength="120" placeholder="مثلاً: حل واجب الدرس الأول" required></div>
+    <div class="field full"><button class="btn" type="submit">＋ إضافة المهمة</button></div>
+  </form>
+</section>
+
+<section class="card">
+  <div class="section-title"><h2>مهامي</h2><span class="muted" id="visibleCount"></span></div>
+  <div class="tabs" id="filters">
+    <button class="tab active" data-filter="all">الكل</button>
+    <button class="tab" data-filter="open">متبقية</button>
+    <button class="tab" data-filter="done">مكتملة</button>
+  </div>
+  <div class="task-list" id="taskList" style="margin-top:13px"></div>
+</section>
+
+<section class="card">
+  <div class="section-title"><h2>المواد الدراسية</h2><span class="muted">تتكوّن تلقائيًا من مهامك</span></div>
+  <div id="subjectList"></div>
+</section>
+
+<section class="card">
+  <div class="section-title"><h2>مركز المساعدة</h2><span class="muted">من غير ضغط أو لوم</span></div>
+  <div class="support-box">
+    <div class="notice">اختار نوع المساعدة. الردود الجاهزة تعمل داخل التطبيق. المساعد الذكي والتواصل المباشر مع صاحب التطبيق يحتاجان ربط خدمة خارجية قبل إطلاقهما.</div>
+    <div class="form-grid">
+      <div class="field"><label for="helpType">نوع المساعدة</label><select id="helpType"><option value="quick">ردود جاهزة</option><option value="ai">مساعد ذكي (تجريبي)</option><option value="human">التواصل مع صاحب التطبيق</option></select></div>
+      <div class="field"><label for="helpTopic">الموضوع</label><select id="helpTopic"><option value="missed">ما أنجزتش المهمة</option><option value="finished">أنجزت ونسيت أعلّم عليها</option><option value="organize">محتاج أنظم وقتي</option><option value="unclear">المهمة مش واضحة</option></select></div>
+    </div>
+    <div id="quickReply" class="notice">اختار الموضوع لعرض اقتراح مناسب.</div>
+    <div id="chatArea" class="hidden">
+      <div class="chat" id="chatMessages"><div class="bubble">أهلًا! أقدر أساعدك بأفكار عامة لتنظيم المذاكرة. دي نسخة تجريبية وليست ذكاءً اصطناعيًا متصلًا.</div></div>
+      <div class="field"><label for="chatInput">اكتب رسالتك</label><textarea id="chatInput" placeholder="إيه اللي محتاج مساعدة فيه؟"></textarea></div>
+      <button class="btn" id="sendChat" type="button">إرسال</button>
+    </div>
+    <div id="humanArea" class="hidden">
+      <div class="field"><label for="ownerContact">وسيلة تواصل صاحب التطبيق</label><input id="ownerContact" placeholder="يضيف صاحب التطبيق بريده أو رابط الدعم هنا"></div>
+      <button class="btn secondary" id="saveContact" type="button">حفظ وسيلة التواصل</button>
+      <p class="muted" id="contactStatus">لم يتم إعداد قناة تواصل حقيقية بعد.</p>
+    </div>
+  </div>
+</section>
+<div class="footer">MyStudy • بياناتك محفوظة على هذا الجهاز في هذا المتصفح</div>
+</div>
+
+<div class="modal-backdrop" id="returnModal" role="dialog" aria-modal="true" aria-labelledby="returnTitle">
+ <div class="modal">
+  <h3 id="returnTitle">أهلًا بعودتك 👋</h3>
+  <p>فيه مهام قديمة لسه متعلّمة كمتبقية. هل أنجزت أيًّا منها ونسيت تحدّث حالتها؟</p>
+  <div class="actions"><button class="btn" id="reviewTasks">مراجعة المهام</button><button class="btn secondary" id="laterTasks">مش دلوقتي</button></div>
+ </div>
+</div>
+
+<script>
+const STORE='mystudy-v1';
+const $=id=>document.getElementById(id);
+const today=()=>new Date().toISOString().slice(0,10);
+let state={tasks:[],ownerContact:'',lastVisit:today()};
+let filter='all';
+function load(){try{const raw=localStorage.getItem(STORE);if(raw)state={...state,...JSON.parse(raw)};}catch(e){console.warn('تعذر قراءة البيانات',e)}}
+function save(){localStorage.setItem(STORE,JSON.stringify(state));}
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function subjects(){return [...new Set(state.tasks.map(t=>t.subject).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'ar'))}
+function render(){
+ const total=state.tasks.length,done=state.tasks.filter(t=>t.done).length,left=total-done,pct=total?Math.round(done/total*100):0;
+ $('totalCount').textContent=total;$('doneCount').textContent=done;$('leftCount').textContent=left;$('progressText').textContent=pct+'%';$('progressBar').style.width=pct+'%';
+ $('subjectSummary').innerHTML=subjects().map(s=>`<span class="chip">${esc(s)}</span>`).join('')||'<span class="muted">أضف أول مادة من خلال مهمة جديدة</span>';
+ $('subjectOptions').innerHTML=subjects().map(s=>`<option value="${esc(s)}">`).join('');
+ const list=state.tasks.filter(t=>filter==='all'||(filter==='open'&&!t.done)||(filter==='done'&&t.done));
+ $('visibleCount').textContent=list.length+' مهمة';
+ $('taskList').innerHTML=list.length?list.map(t=>`<article class="task ${t.done?'done':''}">
+  <input type="checkbox" aria-label="تغيير حالة المهمة" data-toggle="${t.id}" ${t.done?'checked':''}>
+  <div><h3>${esc(t.name)}</h3><div class="task-meta"><span>📚 ${esc(t.subject)}</span><span>📅 ${esc(t.date||'بدون موعد')}</span></div></div>
+  <div class="task-actions actions"><span class="status ${t.done?'done':''}">${t.done?'مكتملة':'متبقية'}</span><button class="btn danger small" data-delete="${t.id}" type="button">حذف</button></div>
+ </article>`).join(''):'<div class="empty">مفيش مهام في القسم ده حاليًا 🌱</div>';
+ $('subjectList').innerHTML=subjects().length?subjects().map(s=>{const arr=state.tasks.filter(t=>t.subject===s);return `<div class="subject-row"><b>${esc(s)}</b><span class="muted">${arr.filter(t=>t.done).length} من ${arr.length} مكتملة</span></div>`}).join(''):'<p class="muted">المواد هتظهر هنا بعد إضافة أول مهمة.</p>';
+}
+$('taskDate').value=today();
+$('taskForm').addEventListener('submit',e=>{e.preventDefault();const subject=$('subject').value.trim(),name=$('taskName').value.trim(),date=$('taskDate').value;if(!subject||!name||!date)return;state.tasks.unshift({id:Date.now(),subject,name,date,done:false,createdAt:new Date().toISOString()});save();render();$('taskName').value='';$('subject').value='';$('taskDate').value=today();});
+$('taskList').addEventListener('change',e=>{const id=Number(e.target.dataset.toggle);if(!id)return;state.tasks=state.tasks.map(t=>t.id===id?{...t,done:e.target.checked}:t);save();render();});
+$('taskList').addEventListener('click',e=>{const id=Number(e.target.dataset.delete);if(!id)return;if(confirm('متأكد إنك عايز تحذف المهمة؟')){state.tasks=state.tasks.filter(t=>t.id!==id);save();render();}});
+$('filters').addEventListener('click',e=>{const b=e.target.closest('[data-filter]');if(!b)return;filter=b.dataset.filter;document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x===b));render();});
+const replies={
+ missed:'ولا يهمك. جرّب تختار خطوة صغيرة من المهمة، أو غيّر موعدها لوقت أنسب. التطبيق هنا عشان يساعدك مش يحاسبك.',
+ finished:'تمام! افتح قائمة المهام وعلّم المهمة كمكتملة. لو نسيت قبل كده، تقدر تحدّث حالتها دلوقتي.',
+ organize:'ابدأ باختيار مهمة واحدة مهمة بالنسبة لك، وحدد لها وقتًا واقعيًا. وسيب لنفسك مساحة للراحة وتغيير الخطة.',
+ unclear:'قسّم المهمة إلى خطوات أصغر، واكتب بالضبط إيه الجزء غير الواضح. ممكن تسأل مدرسك أو زميل تثق فيه.'
+};
+function updateSupport(){const type=$('helpType').value,topic=$('helpTopic').value;$('quickReply').classList.toggle('hidden',type!=='quick');$('chatArea').classList.toggle('hidden',type!=='ai');$('humanArea').classList.toggle('hidden',type!=='human');$('quickReply').textContent=replies[topic];$('ownerContact').value=state.ownerContact||'';}
+$('helpType').addEventListener('change',updateSupport);$('helpTopic').addEventListener('change',updateSupport);
+$('sendChat').addEventListener('click',()=>{const v=$('chatInput').value.trim();if(!v)return;const box=$('chatMessages');const me=document.createElement('div');me.className='bubble me';me.textContent=v;box.append(me);const ans=document.createElement('div');ans.className='bubble';ans.textContent='شكرًا إنك وضّحت. دي نسخة تجريبية، فمش متصل حاليًا بنموذج ذكاء اصطناعي. كخطوة أولى: قسّم اللي محتاجه لخطوات صغيرة وحدد أول خطوة تقدر تبدأ بيها.';box.append(ans);$('chatInput').value='';box.scrollTop=box.scrollHeight;});
+$('saveContact').addEventListener('click',()=>{state.ownerContact=$('ownerContact').value.trim();save();$('contactStatus').textContent=state.ownerContact?'تم حفظ وسيلة التواصل في هذا الجهاز. يلزم إعداد رابط/خدمة فعلية لاستقبال الرسائل.':'لم يتم إعداد قناة تواصل حقيقية بعد.';});
+$('reviewTasks').addEventListener('click',()=>{$('returnModal').style.display='none';filter='open';document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x.dataset.filter==='open'));render();$('taskList').scrollIntoView({behavior:'smooth',block:'center'});});
+$('laterTasks').addEventListener('click',()=>$('returnModal').style.display='none');
+load();render();updateSupport();
+if(state.lastVisit && state.lastVisit<today() && state.tasks.some(t=>!t.done && t.date<today()))$('returnModal').style.display='flex';
+state.lastVisit=today();save();
+if('serviceWorker' in navigator && location.protocol.startsWith('http'))navigator.serviceWorker.register('./sw.js').catch(()=>{});
+</script>
+</body>
+</html>
